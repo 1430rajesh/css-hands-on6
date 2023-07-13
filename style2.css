@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+.parent{
+    height: 100vh;
+    border-right:10px solid green ;
+    border-left: 10px solid yellow;
+    background-image: url(./sky.jpg);
+    background-position: center;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+ul #chocalate{
+    background-color: chocolate;
+}
+ul #white{
+    background-color: white;
+}
+ul #green{
+    background-color: green;
+}
+.image{
+    position: relative;
+}
+.sun img{
+    width: 65px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    animation-name: sun 2s infinity revrse;
+    animation: box5 2s ease infinite alternate forwards;
+}
+@keyframes box5{
+    0%{
+        transform:translateX(-400px) ;
+        }
+    100% {
+    transform:scaleX(1);
+    } 
+}
+
+
+
+.city img{
+    position: absolute;
+    width: 1220px;
+    height: 270px;
+    top: 70px;
+    overflow: hidden;
+
+    
+    animation: box5 2s ease infinite alternate forwards;
+}
+@keyframes box5{
+    0%{
+        transform: scaleX(.5);
+        }
+    100% {
+    transform:scaleX(1);
+    } 
+}
+
+
+.road img{
+    position: absolute;
+    top: 340px;
+    width: 10000px;
+margin-left: -3000px;
+    animation: box5 2s ease infinite alternate forwards;
+    overflow: hidden;
+}
+@keyframes box5{
+    0%{
+        transform: scaleX(.5);
+        }
+    100% {
+    transform:scaleX(1);
+    overflow: hidden;
+    } 
+}
+.car img{
+    position: absolute;
+    top: 350px;
+    left: 350px;
+    width: 400px;
+}
